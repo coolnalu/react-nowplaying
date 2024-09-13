@@ -139,7 +139,7 @@ const NowPlayingContextProvider = ({ children }: NowPlayingContextInterface) => 
     >
       {children}
       <audio id="react-nowplaying">
-        <source id="react-nowplaying-src" src={silence} type={"audio/mp3"} />
+        <source id="react-nowplaying-src" src={silence} type={type} />
       </audio>
     </NowPlayingContext.Provider>
   );
